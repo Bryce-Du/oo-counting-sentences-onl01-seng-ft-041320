@@ -17,8 +17,7 @@ class String
   def count_sentences
     sentence_array = self.split(/[.!?]/)
     selectences = sentence_array.select do |sentence|
-      puts sentence
-      true
+      sentence != "" 
     end
     selectences.length
   end
