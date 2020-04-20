@@ -17,7 +17,7 @@ class String
   def count_sentences
     sentence_array = self.split(/[.,!,?]/)
     sentence_array.select do |sentence|
-      
+      sentence != "!" && sentence != "?" && sentence != "."
     end
   end
 end
