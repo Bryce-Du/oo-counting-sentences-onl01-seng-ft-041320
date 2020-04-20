@@ -16,6 +16,8 @@ class String
 
   def count_sentences
     sentence_array = self.split(/[.,!,?]/)
-    sentence_array.
+    sentence_array.select do |sentence|
+      
+    end
   end
 end
